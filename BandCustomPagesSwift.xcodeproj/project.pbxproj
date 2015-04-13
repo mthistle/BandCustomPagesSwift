@@ -12,18 +12,11 @@
 		939E52C11AD77D25008481C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939E52BF1AD77D25008481C3 /* Main.storyboard */; };
 		939E52C31AD77D25008481C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939E52C21AD77D25008481C3 /* Images.xcassets */; };
 		939E52C61AD77D25008481C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 939E52C41AD77D25008481C3 /* LaunchScreen.xib */; };
-		939E52D21AD77D25008481C3 /* BandCustomPagesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E52D11AD77D25008481C3 /* BandCustomPagesSwiftTests.swift */; };
+		939E52DD1AD77D53008481C3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939E52DC1AD77D53008481C3 /* CoreBluetooth.framework */; };
+		939E52DF1AD77D68008481C3 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939E52DE1AD77D68008481C3 /* MicrosoftBandKit_iOS.framework */; };
+		939E52E31AD77E11008481C3 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 939E52E11AD77E11008481C3 /* A.png */; };
+		939E52E41AD77E11008481C3 /* Aa.png in Resources */ = {isa = PBXBuildFile; fileRef = 939E52E21AD77E11008481C3 /* Aa.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		939E52CC1AD77D25008481C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 939E52AE1AD77D25008481C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 939E52B51AD77D25008481C3;
-			remoteInfo = BandCustomPagesSwift;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		939E52B61AD77D25008481C3 /* BandCustomPagesSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandCustomPagesSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,9 +26,11 @@
 		939E52C01AD77D25008481C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		939E52C21AD77D25008481C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		939E52C51AD77D25008481C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		939E52CB1AD77D25008481C3 /* BandCustomPagesSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BandCustomPagesSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		939E52D01AD77D25008481C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		939E52D11AD77D25008481C3 /* BandCustomPagesSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandCustomPagesSwiftTests.swift; sourceTree = "<group>"; };
+		939E52DC1AD77D53008481C3 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		939E52DE1AD77D68008481C3 /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		939E52E01AD77D81008481C3 /* BandCustomPagesSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BandCustomPagesSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		939E52E11AD77E11008481C3 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		939E52E21AD77E11008481C3 /* Aa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aa.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		939E52C81AD77D25008481C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				939E52DD1AD77D53008481C3 /* CoreBluetooth.framework in Frameworks */,
+				939E52DF1AD77D68008481C3 /* MicrosoftBandKit_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +49,8 @@
 		939E52AD1AD77D25008481C3 = {
 			isa = PBXGroup;
 			children = (
+				939E52DB1AD77D3E008481C3 /* Frameworks */,
 				939E52B81AD77D25008481C3 /* BandCustomPagesSwift */,
-				939E52CE1AD77D25008481C3 /* BandCustomPagesSwiftTests */,
 				939E52B71AD77D25008481C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				939E52B61AD77D25008481C3 /* BandCustomPagesSwift.app */,
-				939E52CB1AD77D25008481C3 /* BandCustomPagesSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,9 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				939E52BB1AD77D25008481C3 /* AppDelegate.swift */,
+				939E52E01AD77D81008481C3 /* BandCustomPagesSwift-Bridging-Header.h */,
 				939E52BD1AD77D25008481C3 /* ViewController.swift */,
 				939E52BF1AD77D25008481C3 /* Main.storyboard */,
 				939E52C21AD77D25008481C3 /* Images.xcassets */,
+				939E52E11AD77E11008481C3 /* A.png */,
+				939E52E21AD77E11008481C3 /* Aa.png */,
 				939E52C41AD77D25008481C3 /* LaunchScreen.xib */,
 				939E52B91AD77D25008481C3 /* Supporting Files */,
 			);
@@ -95,21 +87,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		939E52CE1AD77D25008481C3 /* BandCustomPagesSwiftTests */ = {
+		939E52DB1AD77D3E008481C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				939E52D11AD77D25008481C3 /* BandCustomPagesSwiftTests.swift */,
-				939E52CF1AD77D25008481C3 /* Supporting Files */,
+				939E52DE1AD77D68008481C3 /* MicrosoftBandKit_iOS.framework */,
+				939E52DC1AD77D53008481C3 /* CoreBluetooth.framework */,
 			);
-			path = BandCustomPagesSwiftTests;
-			sourceTree = "<group>";
-		};
-		939E52CF1AD77D25008481C3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				939E52D01AD77D25008481C3 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,24 +116,6 @@
 			productReference = 939E52B61AD77D25008481C3 /* BandCustomPagesSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		939E52CA1AD77D25008481C3 /* BandCustomPagesSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 939E52D81AD77D25008481C3 /* Build configuration list for PBXNativeTarget "BandCustomPagesSwiftTests" */;
-			buildPhases = (
-				939E52C71AD77D25008481C3 /* Sources */,
-				939E52C81AD77D25008481C3 /* Frameworks */,
-				939E52C91AD77D25008481C3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				939E52CD1AD77D25008481C3 /* PBXTargetDependency */,
-			);
-			name = BandCustomPagesSwiftTests;
-			productName = BandCustomPagesSwiftTests;
-			productReference = 939E52CB1AD77D25008481C3 /* BandCustomPagesSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +127,6 @@
 				TargetAttributes = {
 					939E52B51AD77D25008481C3 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					939E52CA1AD77D25008481C3 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 939E52B51AD77D25008481C3;
 					};
 				};
 			};
@@ -182,7 +144,6 @@
 			projectRoot = "";
 			targets = (
 				939E52B51AD77D25008481C3 /* BandCustomPagesSwift */,
-				939E52CA1AD77D25008481C3 /* BandCustomPagesSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,16 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939E52E41AD77E11008481C3 /* Aa.png in Resources */,
 				939E52C11AD77D25008481C3 /* Main.storyboard in Resources */,
+				939E52E31AD77E11008481C3 /* A.png in Resources */,
 				939E52C61AD77D25008481C3 /* LaunchScreen.xib in Resources */,
 				939E52C31AD77D25008481C3 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		939E52C91AD77D25008481C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,23 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		939E52C71AD77D25008481C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				939E52D21AD77D25008481C3 /* BandCustomPagesSwiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		939E52CD1AD77D25008481C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 939E52B51AD77D25008481C3 /* BandCustomPagesSwift */;
-			targetProxy = 939E52CC1AD77D25008481C3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		939E52BF1AD77D25008481C3 /* Main.storyboard */ = {
@@ -289,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -336,9 +276,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BandCustomPagesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BandCustomPagesSwift/BandCustomPagesSwift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -346,43 +291,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BandCustomPagesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		939E52D91AD77D25008481C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BandCustomPagesSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BandCustomPagesSwift.app/BandCustomPagesSwift";
-			};
-			name = Debug;
-		};
-		939E52DA1AD77D25008481C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BandCustomPagesSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BandCustomPagesSwift.app/BandCustomPagesSwift";
+				SWIFT_OBJC_BRIDGING_HEADER = "BandCustomPagesSwift/BandCustomPagesSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -403,14 +319,6 @@
 			buildConfigurations = (
 				939E52D61AD77D25008481C3 /* Debug */,
 				939E52D71AD77D25008481C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		939E52D81AD77D25008481C3 /* Build configuration list for PBXNativeTarget "BandCustomPagesSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				939E52D91AD77D25008481C3 /* Debug */,
-				939E52DA1AD77D25008481C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

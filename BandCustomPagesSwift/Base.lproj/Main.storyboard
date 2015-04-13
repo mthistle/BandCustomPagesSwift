@@ -1,24 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8zr-hs-hpq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="hyw-Rb-yBO">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8zr-hs-hpq" customClass="ViewController" customModule="BandNotificationSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="UOe-SS-NHK"/>
+                        <viewControllerLayoutGuide type="bottom" id="U22-Yb-eGW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="Ycy-We-mgm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Microsoft Band!!!" translatesAutoresizingMaskIntoConstraints="NO" id="VcE-VT-RMT">
+                                <rect key="frame" x="16" y="92" width="568" height="488"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE1-rD-26r">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="RUN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runExampleCode:" destination="8zr-hs-hpq" eventType="touchUpInside" id="YSo-h9-JQg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VcE-VT-RMT" firstAttribute="leading" secondItem="rE1-rD-26r" secondAttribute="leading" id="Ay0-u0-uMy"/>
+                            <constraint firstItem="VcE-VT-RMT" firstAttribute="trailing" secondItem="rE1-rD-26r" secondAttribute="trailing" id="bmE-Vb-YCE"/>
+                            <constraint firstItem="VcE-VT-RMT" firstAttribute="trailing" secondItem="Ycy-We-mgm" secondAttribute="trailingMargin" id="c0m-ZR-CyY"/>
+                            <constraint firstItem="rE1-rD-26r" firstAttribute="top" secondItem="UOe-SS-NHK" secondAttribute="bottom" constant="8" symbolic="YES" id="g4N-C7-z00"/>
+                            <constraint firstAttribute="bottom" secondItem="VcE-VT-RMT" secondAttribute="bottom" constant="20" symbolic="YES" id="qX2-Rf-ScU"/>
+                            <constraint firstItem="VcE-VT-RMT" firstAttribute="top" secondItem="rE1-rD-26r" secondAttribute="bottom" constant="34" id="rkd-Fu-mXX"/>
+                            <constraint firstItem="VcE-VT-RMT" firstAttribute="leading" secondItem="Ycy-We-mgm" secondAttribute="leadingMargin" id="sr9-zm-x6N"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtOutput" destination="VcE-VT-RMT" id="1lw-wv-11Y"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jp-eC-zAU" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
